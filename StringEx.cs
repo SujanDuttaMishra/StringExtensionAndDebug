@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Scripting;
 using Object = UnityEngine.Object;
 public static class StringEx
 {
