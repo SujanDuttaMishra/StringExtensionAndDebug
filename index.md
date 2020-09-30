@@ -1,5 +1,5 @@
 # String Extension And Debug
-
+### Easy String Interpolation with color style and size With Debug Methods
 
 ### Setup
 
