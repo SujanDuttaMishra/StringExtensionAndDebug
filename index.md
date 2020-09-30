@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# String Extension And Debug
 
-You can use the [editor on GitHub](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Setup
 
-### Markdown
+* Copy and Paste [StringEx](/StringEx.cs ) and [StringExMono](/StringExMono.cs ) to unity asset folder (preferable in scripts) and its ready to go
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Use
+![](Images/using.png)
+* Add a `using static StringEx;` So its easy to Apply or Use Log formats
+* few example are found in [StringExMono](/StringExMono.cs ) , attach  [StringExMono](/StringExMono.cs ) in empty Gameobject Run editor to see.
 
-```markdown
-Syntax highlighted code block
+**If Using normal Debug.log ** add .Interpolate() at end of interpolated string  i.e $"something".Interpolate()
 
-# Header 1
-## Header 2
-### Header 3
+1. With String interpolated Value
 
-- Bulleted
-- List
+            { Debug.Log($" IsSaving :C:b:18; hello {Apply(Color.red, FontStyle.Bold, value)} Thus ReStarting {Apply("green,bi")}   \"SaveRoutine\"{Apply(Color.yellow, FontStyle.BoldAndItalic, value)}".Interpolate());
+}
 
-1. Numbered
-2. List
+2. Without String interpolated Value
 
-**Bold** and _Italic_ and `Code` text
+            { Debug.Log($" IsSaving TiTLeCase :W:I:15:T; hello :R:BI:19; Thus ReStarting :i;  \"SaveRoutine\" :M:10:I;".Interpolate());
+}
 
-[Link](url) and ![Image](src)
-```
+3. With Log Overload method & String interpolated Value (does not need .Interpolate()) and clean preferable way with extra benefit
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+            { Log($" NoTrace :C:b:18; hello {Apply(Color.red, FontStyle.Bold, value)} Thus ReStarting {Apply("green,bi")}   \"SaveRoutine\"{Apply(Color.green, FontStyle.BoldAndItalic, value)}");
+}
+4. Warning example
 
-### Jekyll Themes
+            { LogWarning($" NoTrace :W:I:15:U; hello :R:BI:19; Thus ReStarting :i;  \"SaveRoutine\" :M:10:I;");
+}
+5. Create A line
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+            {  Log(Color.blue, '+', 200); // draws color line of any char  with of defined length
+}
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* With Log Methods you can turn off LOG and debug with single Bool Key ` StringEx.DoLog = false;` In production for optimization No need to find all debug.log and comment out *** only applies to Log Method
+* Log/LogError/LogWarning/LogAssert doesn't do trace (if all you want is to get clean debug) ; LogT/LogErrorT/LogWarningT/LogAssertT does trace that you can logTrace to script
+
+* See more example use in [StringExMono](/StringExMono.cs )
+
+![](Images/DebugLog.PNG)
+
+
