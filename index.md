@@ -3,7 +3,7 @@
 
 ### Setup
 
-* Copy and Paste [StringEx](/StringEx.cs ) and [StringExMono](/StringExMono.cs ) to unity asset folder (preferable in scripts) and its ready to go
+* Copy and Paste [StringEx](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringEx.cs ) and (Optional) [StringExMono](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringExMono.cs ) to unity asset folder (preferable in scripts) and its ready to go
 
 ### Use
 ![](Images/using.png)
@@ -38,7 +38,7 @@
 * With Log Methods you can turn off LOG and debug with single Bool Key ` StringEx.DoLog = false;` In production for optimization No need to find all debug.log and comment out *** only applies to Log Method
 * Log/LogError/LogWarning/LogAssert doesn't do trace (if all you want is to get clean debug) ; LogT/LogErrorT/LogWarningT/LogAssertT does trace that you can logTrace to script
 
-* See more example use in [StringExMono](/StringExMono.cs ) attach  it in empty Gameobject then Run editor to see.
+* See more example use in [StringExMono](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringExMono.cs ) attach  it in empty Gameobject then Run editor to see.
 
 ![](Images/DebugLog.PNG)
 
