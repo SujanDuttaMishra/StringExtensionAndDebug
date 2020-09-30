@@ -11,12 +11,12 @@
 
 **If Using normal Debug.log ** add .Interpolate() at end of interpolated string  i.e $"something".Interpolate()
 
-1. With String interpolated Value
+1. With String interpolated Value In Debug.log
 
             { Debug.Log($" IsSaving :C:b:18; hello {Apply(Color.red, FontStyle.Bold, value)} Thus ReStarting {Apply("green,bi")}   \"SaveRoutine\"{Apply(Color.yellow, FontStyle.BoldAndItalic, value)}".Interpolate());
 }
 
-2. Without String interpolated Value
+2. Without String interpolated Value In Debug.log
 
             { Debug.Log($" IsSaving TiTLeCase :W:I:15:T; hello :R:BI:19; Thus ReStarting :i;  \"SaveRoutine\" :M:10:I;".Interpolate());
 }
@@ -38,7 +38,7 @@
 * With Log Methods you can turn off LOG and debug with single Bool Key ` StringEx.DoLog = false;` In production for optimization No need to find all debug.log and comment out *** only applies to Log Method
 * Log/LogError/LogWarning/LogAssert doesn't do trace (if all you want is to get clean debug) ; LogT/LogErrorT/LogWarningT/LogAssertT does trace that you can logTrace to script
 
-* See more example use in [StringExMono](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringExMono.cs ) attach  it in empty Gameobject then Run editor to see.
+* See more example use Case in [StringExMono](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringExMono.cs ) attach  it in empty Gameobject then Run editor to see.
 
 ![](Images/DebugLog.PNG)
 
