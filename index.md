@@ -8,7 +8,6 @@
 ### Use
 ![](Images/using.png)
 * Add a `using static StringEx;` So its easy to Apply or Use Log formats
-* few example are found in [StringExMono](/StringExMono.cs ) , attach  [StringExMono](/StringExMono.cs ) in empty Gameobject Run editor to see.
 
 **If Using normal Debug.log ** add .Interpolate() at end of interpolated string  i.e $"something".Interpolate()
 
@@ -39,7 +38,7 @@
 * With Log Methods you can turn off LOG and debug with single Bool Key ` StringEx.DoLog = false;` In production for optimization No need to find all debug.log and comment out *** only applies to Log Method
 * Log/LogError/LogWarning/LogAssert doesn't do trace (if all you want is to get clean debug) ; LogT/LogErrorT/LogWarningT/LogAssertT does trace that you can logTrace to script
 
-* See more example use in [StringExMono](/StringExMono.cs )
+* See more example use in [StringExMono](/StringExMono.cs ) attach  it in empty Gameobject then Run editor to see.
 
 ![](Images/DebugLog.PNG)
 
