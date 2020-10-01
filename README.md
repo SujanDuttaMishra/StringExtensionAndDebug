@@ -1,4 +1,5 @@
 # String Extension And Debug
+![](Images/Unity string extension and debug.png)
 ### Easy String Interpolation with color style and size With Debug Methods
 
 ### Setup
