@@ -1,7 +1,6 @@
 # String Extension And Debug
 ### Easy String Interpolation with color style and size With Debug Methods
-![](Images/Unitystringextensionanddebug.png)
-
+![](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/Images/Unitystringextensionanddebug.png)
 ### Setup
 
 * Copy and Paste [StringEx](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringEx.cs ) and (Optional) [StringExMono](https://github.com/SujanDuttaMishra/StringExtensionAndDebug/blob/master/StringExMono.cs ) to unity asset folder (preferable in scripts) and its ready to go
